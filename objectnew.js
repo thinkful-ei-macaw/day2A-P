@@ -64,13 +64,38 @@ jobOne.boss = 'Trisala';
 }
 */
 
-//for (let i = 0; i < jobList.length; i++){
-    jobList.forEach(element =>
-        if (element.boss === undefined) {
-
+//5
+    jobList.forEach(element => {
+        if(element.boss === undefined) {
             console.log(`${element.jobTitle} ${element.name} doesn't report to anybody.`)
+        } else {
+        console.log(`${element.jobTitle} ${element.name} reports to ${element.boss}`)}
+});
 
-         } 
-         //else {
-        //console.log(`${element.jobTitle} ${element.name} reports to ${element.boss}`)}
-    );
+//6
+
+const decoder = {
+    'a': 1,
+    'b': 2,
+    'c': 3,
+    'd': 4,
+}
+
+function decode(word) {
+    let result = '';
+    let firstLetter = word[0];
+    if (firstLetter in decoder){
+        let index = decoder[firstLetter];
+        result = word[index];
+    } else {
+        result = ' ';
+    }
+    return result;
+  }
+  
+  function decodeWords(words){
+    words = words.split(' ');
+    return words.map(decode)
+  }
+  console.log(decodeWords('craft block argon meter bells brown croon droop'));
+  
