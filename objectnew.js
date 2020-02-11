@@ -55,6 +55,22 @@ let jobThree = {
 
 let jobList = [jobOne, jobTwo, jobThree]
 
-for (let i = 0; i < jobList.length; i++){
+jobThree.boss = 'Trisala';
+jobOne.boss = 'Trisala';
+
+
+/*for (let i = 0; i < jobList.length; i++){
     console.log(jobList[i]);
 }
+*/
+
+//for (let i = 0; i < jobList.length; i++){
+    jobList.forEach(element =>
+        if (element.boss === undefined) {
+
+            console.log(`${element.jobTitle} ${element.name} doesn't report to anybody.`)
+
+         } 
+         //else {
+        //console.log(`${element.jobTitle} ${element.name} reports to ${element.boss}`)}
+    );
