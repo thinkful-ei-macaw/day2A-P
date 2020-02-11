@@ -1,5 +1,11 @@
 'use strict';
 
+let myObj = {
+  foo: 'fee'
+}
+
+
+//1
 function createMyObject() {
   let myObj ={
     foo: "bar",
@@ -13,12 +19,19 @@ function createMyObject() {
   return myObj;
 }
 
-console.log(createMyObject());
 
-function updateObject(obj) {
-
+//2
+function updateObject(myObj) {
+  myObj.foo = 'foo';
+  myObj.bar = 'bar';
+  myObj.bizz = 'bizz';
+  myObj.bang = 'bang';
+  return myObj;
 }
 
+console.log(updateObject(myObj))
+
+//3
 function personMaker() {
   var person = {
     firstName: 'Paul',
