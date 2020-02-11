@@ -29,11 +29,11 @@ function min(numbers) {
 console.log(min([10,21,5,8,12]))
 
 function average(numbers) {
-    let subTotal = 0;
-    numbers.forEach(element => {
-        subTotal += element;
-    });
-    return subTotal/numbers.length;
+  let subTotal = 0;
+  numbers.forEach(element => {
+    subTotal += element;
+  });
+  return subTotal/numbers.length;
 }
 
 console.log(average([10,21,5,8,12]))

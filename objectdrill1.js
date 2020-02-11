@@ -1,8 +1,19 @@
 'use strict';
 
 function createMyObject() {
-
+  let myObj ={
+    foo: "bar",
+    answerToUniverse: 42,
+    'olly olly': 'oxenfree',
+    sayHello: function(){
+      return 'hello';
+    },
+  };
+    
+  return myObj;
 }
+
+console.log(createMyObject());
 
 function updateObject(obj) {
 
