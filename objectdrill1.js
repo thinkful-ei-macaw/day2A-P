@@ -54,6 +54,10 @@ const sampleObj = {
   bang: 'bang',
 };
   
+//4
 function keyDeleter(obj) {
-  // your code here
+  delete obj.foo;
+  return obj;
 }
+
+console.log(keyDeleter(sampleObj))
