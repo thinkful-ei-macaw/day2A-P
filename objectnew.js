@@ -26,3 +26,10 @@ const objTwo = {
 for (const property in objTwo){
     console.log(`${property}: ${objTwo[property]}`)
 }
+
+
+let hobbitMeals = {
+  meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+}
+
+console.log(hobbitMeals.meals[3]);
