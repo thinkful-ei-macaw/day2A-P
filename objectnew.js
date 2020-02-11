@@ -27,9 +27,34 @@ for (const property in objTwo){
     console.log(`${property}: ${objTwo[property]}`)
 }
 
-
+//3
 let hobbitMeals = {
   meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
 }
 
 console.log(hobbitMeals.meals[3]);
+
+//4
+let jobOne = {
+    name: 'Mavise Cerise Escher',
+    jobTitle: 'Joungler',
+    religion: 'Thrackerzod',
+}
+
+let jobTwo = {
+    name: 'Trisala Vahadar',
+    jobTitle: 'Foundation Executive',
+    religion: 'lol'
+}
+
+let jobThree = {
+    name: 'Arabell Frankenstein',
+    jobTitle: 'Mad Scientist/Glass Blower',
+    religion: 'lol'
+}
+
+let jobList = [jobOne, jobTwo, jobThree]
+
+for (let i = 0; i < jobList.length; i++){
+    console.log(jobList[i]);
+}
